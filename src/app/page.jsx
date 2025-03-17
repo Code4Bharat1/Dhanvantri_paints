@@ -1,19 +1,21 @@
-'use client'
+import Navbar from "@/components/layout/navbar"
+import Footer from "@/components/layout/footer"
+import Hero from "@/components/Society/Hero"
+import Society from "@/components/Society/Society"
+import Services from "@/components/Society/Services"
+import OneStop from "@/components/Society/OneStop"
 
-import Services from '@/components/Services/Services.jsx';
-import Footer from '../components/layout/footer.jsx';
-import Navbar from '../components/layout/navbar.jsx';
-import Home from '../components/Home/home.jsx';
-
-const Page = () => {
+const page= () => {
   return (
-    <div>
-      <Navbar />
-      <Home />
-      <Services />
-      <Footer />
-    </div>
+    <>
+    <Navbar/>
+    <Hero />
+    <Society/>
+    <Services/>
+    <OneStop/>
+    <Footer />
+    </>
   )
 }
 
-export default Page;
+export default page;
